@@ -11,11 +11,11 @@ import (
 	"github.com/vishnupal/hotel-reservation/db"
 	"github.com/vishnupal/hotel-reservation/types"
 )
+
 // so our handler can access the UserStore api inside the UserHandler method
 type UserHandler struct {
 	userStore db.UserStore
 }
-
 
 func NewUserHandler(userStore db.UserStore) *UserHandler {
 	return &UserHandler{
